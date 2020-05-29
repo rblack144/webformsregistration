@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Configuration;
+using System.Data.Entity;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -29,6 +31,7 @@ namespace WebFormsRegistration
             if(!Page.IsPostBack)
             {
                 // Get the list of states
+                Database.SetInitializer(new MigrateDatabaseToLatestVersion<DatabaseContext, Migrations.Configuration>());
                 ddlState.DataSource = _context.States.ToList();
                 ddlState.DataBind();
             }

@@ -4,6 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using WebFormsRegistration.Models;
+using WebFormsRegistration.Utility;
 
 namespace WebFormsRegistration.Data
 {
@@ -12,6 +13,11 @@ namespace WebFormsRegistration.Data
     /// </summary>
     public class DatabaseContext : DbContext
     {
+        /// <summary>
+        /// Default constructor
+        /// </summary>
+        public DatabaseContext() : base(Constants.DATABASE) { }
+
         /// <summary>
         /// The list of states
         /// </summary>
