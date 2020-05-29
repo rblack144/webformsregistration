@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/WebFormsRegistration/bin
+/WebFormsRegistration/.vs/WebFormsRegistration
+/WebFormsRegistration/obj/Debug
+/WebFormsRegistration/App_Data/WebFormsRegistration.Data.DatabaseContext.mdf
+/WebFormsRegistration/App_Data/WebFormsRegistration.Data.DatabaseContext_log.ldf
